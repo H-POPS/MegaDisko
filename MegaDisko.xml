@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod>
+  <ModName>MegaDisko</ModName>
+  <ModDiscription>New Parkitect Ride</ModDiscription>
+  <Objects>
+    <Object>
+      <OBJName>GameObject</OBJName>
+      <Type>FlatRide</Type>
+      <X>12</X>
+      <Z>6</Z>
+      <inGameName>Mega Disco</inGameName>
+      <price>500</price>
+      <grid>false</grid>
+      <snapCenter>true</snapCenter>
+      <category></category>
+      <heightDelta>0</heightDelta>
+      <shader>Specular</shader>
+      <RestraintAngle>(0.0, 0.0, 120.0)</RestraintAngle>
+      <Excitement>0.54</Excitement>
+      <Intensity>0.4</Intensity>
+      <Nausea>0.1</Nausea>
+      <recolorable>true</recolorable>
+      <Color1>FF5B2B</Color1>
+      <Color2>3575F1</Color2>
+      <Color3>0017B2</Color3>
+      <Color4>E6FF00</Color4>
+      <BoudingBoxes>
+        <BoudingBox>
+          <min>(6.0, 0.0, 3.0)</min>
+          <max>(-6.0, 4.0, -3.0)</max>
+        </BoudingBox>
+      </BoudingBoxes>
+      <Animation>
+        <motors>
+          <Rotator>
+            <Identifier>Rotator_14</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject/GameObject/Base/Big_Disk</axis>
+            <maxSpeed>45</maxSpeed>
+            <accelerationSpeed>12</accelerationSpeed>
+            <rotationAxis>(0.0, 1.0, 0.0)</rotationAxis>
+          </Rotator>
+          <RotateBetween>
+            <Identifier>RotateBetween_1</Identifier>
+            <axis>ride2/GameObject (2)/GameObject</axis>
+            <rotationAxis>(0.0, 1.0, 13.5)</rotationAxis>
+            <duration>3</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_2</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject</axis>
+            <rotationAxis>(0.0, 1.0, -35.7)</rotationAxis>
+            <duration>4</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_3</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject</axis>
+            <rotationAxis>(0.0, 1.0, 55.9)</rotationAxis>
+            <duration>4</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_4</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject</axis>
+            <rotationAxis>(0.0, 1.0, -89.7)</rotationAxis>
+            <duration>3</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_7</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject/GameObject</axis>
+            <rotationAxis>(0.0, 1.0, 89.7)</rotationAxis>
+            <duration>1</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_8</Identifier>
+            <axis>ride2/Ramp/Ramp_1 (1)/Platform_1_2/Platform_2_2</axis>
+            <rotationAxis>(50.0, 0.0, 0.0)</rotationAxis>
+            <duration>2</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_9</Identifier>
+            <axis>ride2/Ramp/Ramp_1 (1)/Post_4_2/Sub_Post_4_2</axis>
+            <rotationAxis>(-19.0, 0.0, 0.0)</rotationAxis>
+            <duration>2</duration>
+          </RotateBetween>
+          <RotateBetween>
+            <Identifier>RotateBetween_10</Identifier>
+            <axis>ride2/Ramp/Ramp_1 (1)/Platform_1_2/Platform_2_2/Post_2_2/Sub_Post_2_2</axis>
+            <rotationAxis>(-5.0, 0.0, 0.0)</rotationAxis>
+            <duration>1</duration>
+          </RotateBetween>
+          <Mover>
+            <Identifier>Mover_5</Identifier>
+            <axis>ride2/GameObject (2)</axis>
+            <toPosition>(0.0, 3.4, 0.0)</toPosition>
+            <duration>3</duration>
+          </Mover>
+          <Mover>
+            <Identifier>Mover_6</Identifier>
+            <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject/GameObject/Base</axis>
+            <toPosition>(0.0, -4.3, 0.0)</toPosition>
+            <duration>3</duration>
+          </Mover>
+          <MultipleRotations>
+            <Identifier>MultiplyRotations_11</Identifier>
+            <MainAxis>ride2/Ramp/Ramp_1 (1)/Platform_1_2/Platform_2_2</MainAxis>
+            <axis>ride2/Ramp/Ramp_1/Platform_1_2/Platform_2_2</axis>
+          </MultipleRotations>
+          <MultipleRotations>
+            <Identifier>MultiplyRotations_12</Identifier>
+            <MainAxis>ride2/Ramp/Ramp_1/Post_4_2/Sub_Post_4_2</MainAxis>
+            <axis>ride2/Ramp/Ramp_1/Post_4_2/Sub_Post_4_2</axis>
+          </MultipleRotations>
+          <MultipleRotations>
+            <Identifier>MultiplyRotations_13</Identifier>
+            <MainAxis>ride2/Ramp/Ramp_1 (1)/Post_4_2/Sub_Post_4_2</MainAxis>
+            <axis>ride2/Ramp/Ramp_1/Post_4_2/Sub_Post_4_2</axis>
+          </MultipleRotations>
+        </motors>
+        <phases>
+          <phase>
+            <events>
+              <FromToRot>
+                <Identifier>RotateBetween_8</Identifier>
+              </FromToRot>
+              <FromToRot>
+                <Identifier>RotateBetween_9</Identifier>
+              </FromToRot>
+              <FromToRot>
+                <Identifier>RotateBetween_10</Identifier>
+              </FromToRot>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_11</Identifier>
+              </ApplyRotation>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_13</Identifier>
+              </ApplyRotation>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_12</Identifier>
+              </ApplyRotation>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <StartRotator>
+                <Identifier>Rotator_14</Identifier>
+              </StartRotator>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_1</Identifier>
+              </FromToRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_2</Identifier>
+              </FromToRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_3</Identifier>
+              </FromToRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </FromToRot>
+              <FromToMove>
+                <Identifier>Mover_5</Identifier>
+              </FromToMove>
+              <FromToMove>
+                <Identifier>Mover_6</Identifier>
+              </FromToMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </ToFromRot>
+              <ToFromMove>
+                <Identifier>Mover_5</Identifier>
+              </ToFromMove>
+              <ToFromMove>
+                <Identifier>Mover_6</Identifier>
+              </ToFromMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </FromToRot>
+              <FromToMove>
+                <Identifier>Mover_5</Identifier>
+              </FromToMove>
+              <FromToMove>
+                <Identifier>Mover_6</Identifier>
+              </FromToMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </ToFromRot>
+              <ToFromMove>
+                <Identifier>Mover_5</Identifier>
+              </ToFromMove>
+              <ToFromMove>
+                <Identifier>Mover_6</Identifier>
+              </ToFromMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </FromToRot>
+              <FromToMove>
+                <Identifier>Mover_5</Identifier>
+              </FromToMove>
+              <FromToMove>
+                <Identifier>Mover_6</Identifier>
+              </FromToMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </ToFromRot>
+              <ToFromMove>
+                <Identifier>Mover_5</Identifier>
+              </ToFromMove>
+              <ToFromMove>
+                <Identifier>Mover_6</Identifier>
+              </ToFromMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </FromToRot>
+              <FromToMove>
+                <Identifier>Mover_5</Identifier>
+              </FromToMove>
+              <FromToMove>
+                <Identifier>Mover_6</Identifier>
+              </FromToMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </ToFromRot>
+              <ToFromMove>
+                <Identifier>Mover_5</Identifier>
+              </ToFromMove>
+              <ToFromMove>
+                <Identifier>Mover_6</Identifier>
+              </ToFromMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <FromToRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </FromToRot>
+              <FromToMove>
+                <Identifier>Mover_5</Identifier>
+              </FromToMove>
+              <FromToMove>
+                <Identifier>Mover_6</Identifier>
+              </FromToMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_4</Identifier>
+              </ToFromRot>
+              <ToFromMove>
+                <Identifier>Mover_5</Identifier>
+              </ToFromMove>
+              <ToFromMove>
+                <Identifier>Mover_6</Identifier>
+              </ToFromMove>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_3</Identifier>
+              </ToFromRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_2</Identifier>
+              </ToFromRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <SpinRotator>
+                <Identifier>Rotator_14</Identifier>
+                <spin>false</spin>
+                <spins>1</spins>
+              </SpinRotator>
+              <ToFromRot>
+                <Identifier>RotateBetween_1</Identifier>
+              </ToFromRot>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <StopRotator>
+                <Identifier>Rotator_14</Identifier>
+              </StopRotator>
+            </events>
+          </phase>
+          <phase>
+            <events>
+              <ToFromRot>
+                <Identifier>RotateBetween_8</Identifier>
+              </ToFromRot>
+              <ToFromRot>
+                <Identifier>RotateBetween_9</Identifier>
+              </ToFromRot>
+              <ToFromRot>
+                <Identifier>RotateBetween_10</Identifier>
+              </ToFromRot>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_11</Identifier>
+              </ApplyRotation>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_12</Identifier>
+              </ApplyRotation>
+              <ApplyRotation>
+                <Identifier>MultiplyRotations_13</Identifier>
+              </ApplyRotation>
+            </events>
+          </phase>
+        </phases>
+      </Animation>
+      <Waypoints>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>26,1</connectedTo>
+          <localPosition>(-5.5, 0.0, -0.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>0,25</connectedTo>
+          <localPosition>(-5.5, 0.0, 0.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>4,71</connectedTo>
+          <localPosition>(-2.2, 0.0, -2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>72,5</connectedTo>
+          <localPosition>(-2.2, 0.0, 2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>6,40,42,2,41</connectedTo>
+          <localPosition>(-1.1, 0.7, -2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>7,3,45,44,43</connectedTo>
+          <localPosition>(-1.1, 0.8, 2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>42,41,4,8,40</connectedTo>
+          <localPosition>(1.1, 0.8, -2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>9,5,45,44,43</connectedTo>
+          <localPosition>(1.1, 0.8, 2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>6,70</connectedTo>
+          <localPosition>(2.2, 0.0, -2.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73,7</connectedTo>
+          <localPosition>(2.2, 0.0, 2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>39,11</connectedTo>
+          <localPosition>(5.5, 0.0, -0.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>10,12</connectedTo>
+          <localPosition>(5.5, 0.0, 0.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73,11</connectedTo>
+          <localPosition>(5.5, 0.0, 1.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73</connectedTo>
+          <localPosition>(5.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73</connectedTo>
+          <localPosition>(4.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73</connectedTo>
+          <localPosition>(3.4, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>73,17</connectedTo>
+          <localPosition>(2.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>18,16</connectedTo>
+          <localPosition>(1.5, 0.0, 2.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>17,19</connectedTo>
+          <localPosition>(0.5, 0.0, 2.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>20,18</connectedTo>
+          <localPosition>(-0.6, 0.0, 2.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>21,19</connectedTo>
+          <localPosition>(-1.6, 0.0, 2.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>72,20</connectedTo>
+          <localPosition>(-2.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>72</connectedTo>
+          <localPosition>(-3.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>72</connectedTo>
+          <localPosition>(-4.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>72</connectedTo>
+          <localPosition>(-5.5, 0.0, 2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>1,72</connectedTo>
+          <localPosition>(-5.5, 0.0, 1.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>71,0</connectedTo>
+          <localPosition>(-5.5, 0.0, -1.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>71</connectedTo>
+          <localPosition>(-5.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>71</connectedTo>
+          <localPosition>(-4.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>71</connectedTo>
+          <localPosition>(-3.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>71,31</connectedTo>
+          <localPosition>(-2.5, 0.0, -2.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>32,30</connectedTo>
+          <localPosition>(-1.5, 0.0, -2.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>33,31</connectedTo>
+          <localPosition>(-0.5, 0.0, -2.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>34,32</connectedTo>
+          <localPosition>(0.5, 0.0, -2.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>35,33</connectedTo>
+          <localPosition>(1.5, 0.0, -2.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>70,34</connectedTo>
+          <localPosition>(2.5, 0.0, -2.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>70</connectedTo>
+          <localPosition>(3.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>70</connectedTo>
+          <localPosition>(4.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>70</connectedTo>
+          <localPosition>(5.5, 0.0, -2.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>70,10</connectedTo>
+          <localPosition>(5.5, 0.0, -1.5)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>69,67,68,4,42,6</connectedTo>
+          <localPosition>(-0.8, 0.8, -1.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>47,48,49,6,42,4</connectedTo>
+          <localPosition>(0.8, 0.8, -1.6)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>69,47,46,6,4,41,40</connectedTo>
+          <localPosition>(0.0, 0.8, -1.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>61,60,59,45,5,7</connectedTo>
+          <localPosition>(-0.8, 0.8, 1.8)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>57,56,55,45,5,7</connectedTo>
+          <localPosition>(0.8, 0.8, 1.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>58,59,57,7,5,44,43</connectedTo>
+          <localPosition>(0.0, 0.8, 1.8)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>47,69,42</connectedTo>
+          <localPosition>(0.0, 0.8, -1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>48,46,42,41</connectedTo>
+          <localPosition>(0.4, 0.8, -1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>49,47,41</connectedTo>
+          <localPosition>(0.7, 0.8, -1.2)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>48,50,41</connectedTo>
+          <localPosition>(1.0, 0.8, -1.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>49,51</connectedTo>
+          <localPosition>(1.2, 0.8, -0.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>50,52</connectedTo>
+          <localPosition>(1.4, 0.8, -0.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>53,51</connectedTo>
+          <localPosition>(1.4, 0.8, 0.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>54,52</connectedTo>
+          <localPosition>(1.4, 0.8, 0.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>55,53</connectedTo>
+          <localPosition>(1.2, 0.8, 0.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>56,54,44</connectedTo>
+          <localPosition>(1.0, 0.8, 1.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>57,55,44</connectedTo>
+          <localPosition>(0.7, 0.8, 1.2)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>58,56,45,44</connectedTo>
+          <localPosition>(0.4, 0.8, 1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>59,57,45</connectedTo>
+          <localPosition>(0.0, 0.8, 1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>60,58,45,43</connectedTo>
+          <localPosition>(-0.3, 0.8, 1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>61,59,43</connectedTo>
+          <localPosition>(-0.6, 0.8, 1.3)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>62,60,43</connectedTo>
+          <localPosition>(-1.0, 0.8, 1.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>63,61</connectedTo>
+          <localPosition>(-1.2, 0.8, 0.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>64,62</connectedTo>
+          <localPosition>(-1.4, 0.8, 0.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>65,63</connectedTo>
+          <localPosition>(-1.4, 0.8, 0.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>66,64</connectedTo>
+          <localPosition>(-1.4, 0.8, -0.3)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>67,65</connectedTo>
+          <localPosition>(-1.2, 0.8, -0.7)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>68,66,40</connectedTo>
+          <localPosition>(-1.0, 0.8, -1.0)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>69,67,40</connectedTo>
+          <localPosition>(-0.7, 0.8, -1.2)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>True</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>46,68,42,40</connectedTo>
+          <localPosition>(-0.4, 0.8, -1.4)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>8,39,38,37,36,35</connectedTo>
+          <localPosition>(2.6, 0.0, -2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>2,30,29,28,27,26</connectedTo>
+          <localPosition>(-2.5, 0.0, -2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>21,3,22,23,24,25</connectedTo>
+          <localPosition>(-2.5, 0.0, 2.1)</localPosition>
+        </Waypoint>
+        <Waypoint>
+          <isOuter>False</isOuter>
+          <isRabbitHoleGoal>False</isRabbitHoleGoal>
+          <connectedTo>9,16,15,14,13,12</connectedTo>
+          <localPosition>(2.5, 0.0, 2.1)</localPosition>
+        </Waypoint>
+      </Waypoints>
+    </Object>
+  </Objects>
+</Mod>
