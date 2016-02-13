@@ -42,31 +42,31 @@
           <RotateBetween>
             <Identifier>RotateBetween_1</Identifier>
             <axis>ride2/GameObject (2)/GameObject</axis>
-            <rotationAxis>(0.0, 1.0, 13.5)</rotationAxis>
+            <rotationAxis>(0.0, 0.0, 13.5)</rotationAxis>
             <duration>3</duration>
           </RotateBetween>
           <RotateBetween>
             <Identifier>RotateBetween_2</Identifier>
             <axis>ride2/GameObject (2)/GameObject/GameObject</axis>
-            <rotationAxis>(0.0, 1.0, -35.7)</rotationAxis>
+            <rotationAxis>(0.0, 0.0, -35.7)</rotationAxis>
             <duration>4</duration>
           </RotateBetween>
           <RotateBetween>
             <Identifier>RotateBetween_3</Identifier>
             <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject</axis>
-            <rotationAxis>(0.0, 1.0, 55.9)</rotationAxis>
+            <rotationAxis>(0.0, 0.0, 55.9)</rotationAxis>
             <duration>4</duration>
           </RotateBetween>
           <RotateBetween>
             <Identifier>RotateBetween_4</Identifier>
             <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject</axis>
-            <rotationAxis>(0.0, 1.0, -89.7)</rotationAxis>
+            <rotationAxis>(0.0, 0.0, -89.7)</rotationAxis>
             <duration>3</duration>
           </RotateBetween>
           <RotateBetween>
             <Identifier>RotateBetween_7</Identifier>
             <axis>ride2/GameObject (2)/GameObject/GameObject/GameObject/GameObject/GameObject</axis>
-            <rotationAxis>(0.0, 1.0, 89.7)</rotationAxis>
+            <rotationAxis>(0.0, 0.0, 89.7)</rotationAxis>
             <duration>1</duration>
           </RotateBetween>
           <RotateBetween>
